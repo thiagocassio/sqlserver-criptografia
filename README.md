@@ -96,15 +96,6 @@ O foco é mostrar **como implementar e validar de verdade**, sem exemplos apenas
 | Rede              | TLS / SSL                       |
 | Chave externa     | EKM                             |
 
----
-
-## Próximas evoluções
-
-* converter todos os tópicos para markdown individual
-* adicionar imagens dos fluxos no SSMS
-* criar laboratório por versão do SQL Server
-* adicionar troubleshooting e erros comuns
-* incluir cenários de LGPD e ISO 27001
 
 ---
 
