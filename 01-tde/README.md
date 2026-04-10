@@ -63,7 +63,7 @@ USE SeuBanco;
 GO
 
 CREATE DATABASE ENCRYPTION KEY
-WITH ALGORITHM = AES\_256
+WITH ALGORITHM = AES_256
 ENCRYPTION BY SERVER CERTIFICATE CertTDE;
 GO
 ```
@@ -95,11 +95,10 @@ GO
 ## Como validar
 ```sql
 SELECT
-DB\_NAME(database\_id) AS Banco,
-encryption\_state,
-encryptor\_type
-FROM sys.dm\_database\_encryption\_keys;
-
+DB_NAME(database_id) AS Banco,
+encryption_state,
+encryptor_type
+FROM sys.dm_database_encryption_keys;
 ```
 
 ### Resultado esperado
@@ -111,11 +110,16 @@ FROM sys.dm\_database\_encryption\_keys;
 
 O teste ideal é:
 
-1\. ativar o TDE
-2\. gerar backup
-3\. tentar restaurar em outra instância **sem o certificado**
+1. ativar o TDE
+   
+2. gerar backup
+   
+3. tentar restaurar em outra instância **sem o certificado*
+   
 4. validar a falha
+   
 5. importar o certificado
+
 6. restaurar novamente
 
 Esse laboratório prova que o TDE está funcionando corretamente.
@@ -132,7 +136,6 @@ Esse laboratório prova que o TDE está funcionando corretamente.
 ---
 
 ## Limitações
-
 - não protege contra DBA com acesso ao banco online
 - dados continuam visíveis em `SELECT`
 - depende de certificado para restore
