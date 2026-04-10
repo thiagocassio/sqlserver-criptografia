@@ -84,10 +84,14 @@ GO
 
 **Fluxo:**
 
-1\. selecionar o banco
+1. selecionar o banco
+
 2. criar ou escolher certificado
+
 3. escolher algoritmo (**AES 256**)
+
 4. habilitar encryption
+
 5. confirmar
 
 ---
