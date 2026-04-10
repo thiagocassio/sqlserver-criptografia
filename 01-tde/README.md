@@ -86,7 +86,7 @@ GO
 
 1\. selecionar o banco
 2. criar ou escolher certificado
-3. escolher algoritmo (\*\*AES 256\*\*)
+3. escolher algoritmo (**AES 256**)
 4. habilitar encryption
 5. confirmar
 
@@ -112,16 +112,11 @@ FROM sys.dm\_database\_encryption\_keys;
 O teste ideal é:
 
 1\. ativar o TDE
-
 2\. gerar backup
-
-3\. tentar restaurar em outra instância \*\*sem o certificado\*\*
-
-4\. validar a falha
-
-5\. importar o certificado
-
-6\. restaurar novamente
+3\. tentar restaurar em outra instância **sem o certificado**
+4. validar a falha
+5. importar o certificado
+6. restaurar novamente
 
 Esse laboratório prova que o TDE está funcionando corretamente.
 
@@ -148,12 +143,7 @@ Esse laboratório prova que o TDE está funcionando corretamente.
 ## Melhor visão
 
 | Cenário | Tecnologia |
-
 |---|---|
-
 | Proteção de MDF / LDF / NDF | TDE |
-
 | Backup criptografado | TDE |
-
 | Proteção física do banco | TDE |
-
