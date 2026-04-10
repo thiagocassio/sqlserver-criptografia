@@ -32,8 +32,8 @@ O SQL Server descriptografa automaticamente ao ler a página em memória.
 
 O TDE pode ser implementado de duas formas no SQL Server:
 
-- via \*\*script (T-SQL)\*\*
-- via \*\*interface (SSMS)\*\*
+- via **script (T-SQL)**
+- via **interface (SSMS)**
 
 ---
 
@@ -85,40 +85,31 @@ GO
 **Fluxo:**
 
 1\. selecionar o banco
-2\. criar ou escolher certificado
-3\. escolher algoritmo (\*\*AES 256\*\*)
-4\. habilitar encryption
-5\. confirmar
+2. criar ou escolher certificado
+3. escolher algoritmo (\*\*AES 256\*\*)
+4. habilitar encryption
+5. confirmar
 
 ---
 
 ## Como validar
 ```sql
 SELECT
-&#x20;   DB\_NAME(database\_id) AS Banco,
-&#x20;   encryption\_state,
-&#x20;   encryptor\_type
+DB\_NAME(database\_id) AS Banco,
+encryption\_state,
+encryptor\_type
 FROM sys.dm\_database\_encryption\_keys;
 
 ```
 
+### Resultado esperado
+- `3 = encrypted`
 
+---
 
-\### Resultado esperado
-
-\- `3 = encrypted`
-
-
-
-\---
-
-
-
-\## Como testar de verdade
+## Como testar de verdade
 
 O teste ideal é:
-
-
 
 1\. ativar o TDE
 
