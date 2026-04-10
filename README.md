@@ -47,7 +47,7 @@ Proteção de **dados em repouso**, incluindo MDF, LDF, NDF e backups.
 
 Proteção de **dados sensíveis até mesmo contra DBA**, com chave no cliente.
 
-### 03 — [Criptografia em nível de coluna](03-column-level-encryption/README.md)
+### [03 — Criptografia em nível de coluna](03-column-level-encryption/README.md)
 
 Proteção de **colunas específicas** usando chave simétrica e certificado.
 
