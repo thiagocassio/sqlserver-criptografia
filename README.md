@@ -39,31 +39,31 @@ Cada pasta contém:
 
 ## Tópicos
 
-### 01 — TDE
+### [01 — TDE](01-tde/README.md)
 
 Proteção de **dados em repouso**, incluindo MDF, LDF, NDF e backups.
 
-### 02 — Always Encrypted
+### [02 — Always Encrypted](02-always-encrypted/README.md)
 
 Proteção de **dados sensíveis até mesmo contra DBA**, com chave no cliente.
 
-### 03 — Criptografia em nível de coluna
+### 03 — [Criptografia em nível de coluna](03-column-level-encryption/README.md)
 
 Proteção de **colunas específicas** usando chave simétrica e certificado.
 
-### 04 — Backup Encryption
+### [04 — Backup Encryption](04-backup-encryption/README.md)
 
 Proteção do arquivo **.bak** para restore seguro e DR externo.
 
-### 05 — Hashing
+### [05 — Hashing](05-hashing/README.md)
 
 Integridade, comparação segura e **pseudonimização irreversível**.
 
-### 06 — TLS / SSL
+### [06 — TLS / SSL](06-tls-ssl/README.md)
 
 Proteção de **dados em trânsito** entre cliente e SQL Server.
 
-### 07 — EKM
+### [07 — EKM](07-ekm/README.md)
 
 Integração com **Azure Key Vault / HSM**, mantendo a chave fora do SQL Server.
 
