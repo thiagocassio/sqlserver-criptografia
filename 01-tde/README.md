@@ -79,7 +79,21 @@ ENCRYPTION BY PASSWORD = 'SenhaMuitoForte@2026';
 GO
 ```
 
-#### Etapa 5 — Ativar o TDE
+### Etapa 5 - Backup do certificado TDE
+```sql
+USE master;
+GO
+
+BACKUP CERTIFICATE CertTDE
+TO FILE = 'D:\Backup\TDECert.cer'
+WITH PRIVATE KEY (
+    FILE = 'D:\Backup\TDECert.pvk',
+    ENCRYPTION BY PASSWORD = 'SenhaCertificado@2026'
+);
+GO
+```
+
+#### Etapa 6 — Ativar o TDE
 ```sql
 ALTER DATABASE SeuBanco
 SET ENCRYPTION ON;
