@@ -153,7 +153,9 @@ O teste ideal é:
    
 5. importar o certificado
 
-6. restaurar novamente
+6. restaurar o certificado na instância de origem
+
+7. tentar restaurar novamente o backup
 
 Esse laboratório prova que o TDE está funcionando corretamente.
 
