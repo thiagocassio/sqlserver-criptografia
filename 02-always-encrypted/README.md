@@ -98,10 +98,11 @@ VALUES (1, '12345678901');
 **Fluxo:**
 1. selecionar a tabela
 2. escolher a coluna sensível
-3. selecionar **Deterministic** ou **Randomized**
-4. criar CMK
-5. criar CEK
-6. aplicar alteração
+3. clicar com botão direito, Criptografar Coluna...
+4. selecionar **Deterministic** ou **Randomized**
+5. criar CMK
+6. criar CEK
+7. aplicar alteração
 
 Para laboratório, essa é a forma mais simples porque o SSMS gera o script automaticamente.
 
