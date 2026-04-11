@@ -72,7 +72,7 @@ GO
 #### Etapa 4 — Backup da Database Master Key
 
 ```sql
-USE SeuBanco;
+USE master;
 GO
 
 BACKUP MASTER KEY 
