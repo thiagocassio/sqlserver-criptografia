@@ -68,7 +68,18 @@ ENCRYPTION BY SERVER CERTIFICATE CertTDE;
 GO
 ```
 
-#### Etapa 4 — Ativar o TDE
+### Etapa 4 - Backup da Database Master Key
+```sql
+USE SeuBanco;
+GO
+
+BACKUP MASTER KEY 
+TO FILE = 'D:\BackupKeys\SeuBanco_DMK.key'
+ENCRYPTION BY PASSWORD = 'SenhaMuitoForte@2026';
+GO
+```
+
+#### Etapa 5 — Ativar o TDE
 ```sql
 ALTER DATABASE SeuBanco
 SET ENCRYPTION ON;
