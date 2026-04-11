@@ -58,6 +58,7 @@ GO
 ```
 
 #### Etapa 3 — Criar a chave de criptografia do banco
+
 ```sql
 USE SeuBanco;
 GO
@@ -68,7 +69,8 @@ ENCRYPTION BY SERVER CERTIFICATE CertTDE;
 GO
 ```
 
-### Etapa 4 - Backup da Database Master Key
+#### Etapa 4 — Backup da Database Master Key
+
 ```sql
 USE SeuBanco;
 GO
@@ -79,7 +81,8 @@ ENCRYPTION BY PASSWORD = 'SenhaMuitoForte@2026';
 GO
 ```
 
-### Etapa 5 - Backup do certificado TDE
+#### Etapa 5 — Backup do certificado TDE
+
 ```sql
 USE master;
 GO
@@ -94,6 +97,7 @@ GO
 ```
 
 #### Etapa 6 — Ativar o TDE
+
 ```sql
 ALTER DATABASE SeuBanco
 SET ENCRYPTION ON;
