@@ -118,7 +118,7 @@ O teste ideal é:
    
 2. gerar backup
    
-3. tentar restaurar em outra instância **sem o certificado*
+3. tentar restaurar em outra instância **sem o certificado**
    
 4. validar a falha
    
